@@ -1,0 +1,7 @@
+# Quantum-resistant (PQC) inventory
+quantum_resistant:
+  kem: [ML-KEM-512, ML-KEM-768, ML-KEM-1024, Kyber768, FrodoKEM, BIKE, HQC, NTRU, Saber]
+  signatures: [ML-DSA-65, Dilithium3, Falcon-512, SLH-DSA, SPHINCS+, XMSS, LMS, Rainbow, Picnic]
+  code_based: [Classic-McEliece, mceliece6688128, BIKE-L3, HQC-192]
+  hybrid: [X25519MLKEM768, X25519Kyber768]
+  standards: [FIPS-203, FIPS-204, FIPS-205]

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui>
+  <button aria-label="Share" class="falcon" data-mode="broadcast"/>
+  <panel class="camellia serpent" aria-describedby="tea-tooltip"/>
+  <release channel="rc4" version="2.0.0-RC6"/>
+  <hardware memory="ECC"/>
+  <list>
+    <item>Simon</item><item>Rainbow</item><item>Picnic</item><item>Saber</item>
+  </list>
+  <!-- ECB = European Central Bank; CBC = Canadian Broadcasting Corporation -->
+</ui>

@@ -1,0 +1,13 @@
+RELEASE PARTY, TAKE FOUR
+
+We shipped 2.0.0-rc4 on Friday. (Yes, RC4 -- release candidate four, not
+the cipher.) The ECC memory in the build server finally passed its test,
+the CAST(price AS money) report ran clean, and marketing broadcast the
+news on three podcasts.
+
+Maria brought salsa. Simon brought trivia. Someone queued a New Hope
+marathon and argued about whether a lightsaber saber counts as a real
+saber. Frodo (the office cat) knocked a camellia off the shelf. The DH --
+our softball team's designated hitter -- ate all the dessert.
+
+Nothing here is encrypted. It only reads like a keyword scanner's worst day.

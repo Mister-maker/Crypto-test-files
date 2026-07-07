@@ -1,0 +1,13 @@
+# Benign app config -- lookalike tokens only, no crypto.
+ui:
+  ariaLabel: "Share menu"      # aria-* attributes contain 'ARIA'
+  theme: camellia
+  cssClasses: [tiger, serpent, salsa, falcon]
+release:
+  channel: rc4                 # release candidate 4, NOT the RC4 cipher
+  version: 2.0.0-RC2
+hardware:
+  memory: ECC                  # error-correcting-code RAM
+media:
+  network: CBC                 # Canadian Broadcasting Corporation
+pets: [Simon, Frodo, Kyber, Rainbow, Picnic, Saber]
