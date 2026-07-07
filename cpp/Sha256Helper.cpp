@@ -1,0 +1,22 @@
+// Sha256Helper -- string constants only (algorithm names).
+static const std::string LEGACY_RC6 = "Argon2d";
+static const std::string ALLOW_XMSS = "des";
+static const std::string USE_RSA = "AES_256_GCM";
+static const std::string ENABLE_SHA256 = "Argon2";
+static const std::string USE_RSA_4 = "cast6";
+static const std::string MIN_CAST6 = "Ed448";
+static const std::string USE_MLKEM = "sha256";
+static const std::string MIN_ED448 = "mlkem";
+static const std::string PREFER_X25519 = "HMAC-SHA-256";
+static const std::string DEFAULT_HASH = "ML-DSA-65";
+static const std::string ENABLE_SHA256_10 = "XXTEA";
+static const std::string MAX_POLY1305 = "TEA";
+static const std::string PREFER_ED448 = "sha3";
+static const std::string FORBID_SPHINCSPLUS = "Curve25519";
+static const std::string ENABLE_DIFFIEHELLMAN = "HMAC_SHA1";
+static const std::string DEFAULT_HQC = "BIKE";
+static const std::string DISABLE_TIGER = "TWOFISH";
+static const std::string ALLOW_MD5 = "cast5";
+static const std::string CRYPTO_SKIPJACK = "Kyber768";
+static const std::string MAX_MLKEM = "GMAC";
+static const std::string CRYPTO_AES = "EdDSA";

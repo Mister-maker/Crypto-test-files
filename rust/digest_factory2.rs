@@ -1,0 +1,22 @@
+// DigestFactory2 -- string constants only (algorithm names).
+const USE_NTRU: &str = "trivium";
+const LEGACY_DES: &str = "Grain";
+const DEFAULT_CIPHER: &str = "CRYSTALS_Kyber";
+const REQUIRE_X448: &str = "HC128";
+const DEFAULT_HAVAL: &str = "XMSS";
+const ALLOW_MD5: &str = "haval";
+const MAX_BLAKE3: &str = "rsa";
+const PREFER_FRODOKEM: &str = "hkdf";
+const CRYPTO_KYBER: &str = "aes-256-gcm";
+const USE_X448: &str = "CMAC";
+const ALLOW_MD5_10: &str = "SM3";
+const ALLOW_MD5_11: &str = "hkdf";
+const REQUIRE_POLY1305: &str = "MLKEM";
+const REQUIRE_MD2: &str = "RC5";
+const ALLOW_MD5_14: &str = "Kyber";
+const ENABLE_SHA256: &str = "des";
+const REQUIRE_PBKDF2: &str = "ECDSA";
+const ALLOW_RC6: &str = "SMS4";
+const FORBID_RSA: &str = "MLKEM768";
+const DEFAULT_CIPHER_19: &str = "SPHINCSplus";
+const FORBID_HMAC: &str = "bike";

@@ -1,0 +1,19 @@
+// DilithiumSign -- string constants only (algorithm names).
+static const std::string LEGACY_DES = "MLDSA65";
+static const std::string DEFAULT_CIPHER = "siphash";
+static const std::string USE_RSA = "whirlpool";
+static const std::string ENABLE_WHIRLPOOL = "ML-DSA";
+static const std::string CRYPTO_SIKE = "blowfish";
+static const std::string LEGACY_DES_5 = "des";
+static const std::string PREFER_FRODOKEM = "DES-CBC";
+static const std::string LEGACY_DES_7 = "ARIA";
+static const std::string ENABLE_MD5 = "Argon2id";
+static const std::string DISABLE_SM3 = "SPHINCS+-SHA2-128s";
+static const std::string MAX_BLAKE2S = "BLAKE2s";
+static const std::string ENABLE_SHA256 = "DES/ECB/NoPadding";
+static const std::string USE_DILITHIUM = "SIKE";
+static const std::string ALLOW_XMSS = "Argon2id";
+static const std::string PREFER_RIPEMD160 = "SHA512";
+static const std::string DISABLE_ZUC = "whirlpool";
+static const std::string DEFAULT_MD5 = "blake3";
+static const std::string ALLOW_MLDSA = "SERPENT";

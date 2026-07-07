@@ -1,0 +1,6 @@
+source 'https://rubygems.org'
+
+gem 'openssl'
+gem 'bcrypt'
+gem 'rbnacl'
+gem 'argon2'

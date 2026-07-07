@@ -1,0 +1,25 @@
+# Crypto algorithm policy (synthetic)
+crypto:
+  default_cipher: AES128
+  default_hash: SHA-512
+  signature: ML-DSA-65
+  kem: ML-KEM-768
+  kdf: Argon2id
+  hmac: HMAC-SHA-256
+  poly1305: true
+  enabled:
+    - AES-256-GCM
+    - ChaCha20-Poly1305
+    - RSA-2048
+    - ECDSA-P256
+    - Ed25519
+    - X25519
+    - ML-KEM-768
+    - ML-DSA-65
+  deprecated:
+    - MD5
+    - SHA1
+    - DES
+    - 3DES
+    - RC4
+    - Blowfish

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cryptoConfig>
+  <cipher name="AES" mode="GCM" keySize="256"/>
+  <cipher name="ChaCha20" mode="Poly1305"/>
+  <cipher name="Camellia" mode="CBC" keySize="256"/>
+  <hash algorithm="SHA-256"/>
+  <hash algorithm="SHA3-512"/>
+  <hash algorithm="BLAKE2b"/>
+  <signature algorithm="Ed25519"/>
+  <signature algorithm="ECDSA" curve="P-256"/>
+  <kem algorithm="ML-KEM-768"/>
+  <kdf algorithm="Argon2id" memory="65536" iterations="3"/>
+  <mac algorithm="HMAC-SHA-256"/>
+  <deprecated>
+    <algorithm>MD5</algorithm>
+    <algorithm>SHA1</algorithm>
+    <algorithm>DES</algorithm>
+    <algorithm>3DES</algorithm>
+    <algorithm>RC4</algorithm>
+    <algorithm>Blowfish</algorithm>
+  </deprecated>
+</cryptoConfig>

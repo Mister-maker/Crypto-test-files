@@ -1,0 +1,36 @@
+{
+  "crypto": {
+    "defaultCipher": "AES",
+    "defaultHash": "SHA3-256",
+    "kdf": "scrypt",
+    "signature": "ECDSA",
+    "kem": "ML-KEM-768",
+    "enabledAlgorithms": [
+      "AES-256-GCM",
+      "ChaCha20-Poly1305",
+      "RSA-2048",
+      "ECDSA-P256",
+      "Ed25519",
+      "X25519",
+      "ML-KEM-768",
+      "ML-DSA-65"
+    ],
+    "deprecatedAlgorithms": [
+      "MD5",
+      "SHA1",
+      "DES",
+      "3DES",
+      "RC4",
+      "Blowfish"
+    ],
+    "pbkdf2Iterations": 100000,
+    "bcryptRounds": 12,
+    "argon2": {
+      "memoryKiB": 65536,
+      "iterations": 3,
+      "parallelism": 4
+    },
+    "hmac": "HMAC-SHA-256",
+    "poly1305": true
+  }
+}

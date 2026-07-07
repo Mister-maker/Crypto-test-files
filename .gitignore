@@ -1,0 +1,11 @@
+# Python bytecode from smoke-testing the corpus
+__pycache__/
+*.py[cod]
+
+# macOS
+.DS_Store
+
+# Common build output (not part of the synthetic corpus)
+/build/
+node_modules/
+target/

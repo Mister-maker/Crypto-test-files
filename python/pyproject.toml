@@ -1,0 +1,11 @@
+[project]
+name = "crypto-corpus"
+version = "0.1.0"
+
+[tool.crypto]
+default_cipher = "AES-256-GCM"
+default_hash = "SHA-256"
+kdf = "Argon2id"
+signature = "Ed25519"
+kem = "ML-KEM-768"
+deprecated = ["MD5", "SHA1", "DES", "RC4"]

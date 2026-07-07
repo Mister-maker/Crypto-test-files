@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Crypto Algorithm Dashboard</title>
+</head>
+<body>
+  <h1>Cryptographic Algorithm Inventory</h1>
+  <ul>
+    <li data-algo="AES">AES-256-GCM</li>
+    <li data-algo="ChaCha20">ChaCha20-Poly1305</li>
+    <li data-algo="RSA">RSA-2048</li>
+    <li data-algo="Ed25519">Ed25519</li>
+    <li data-algo="MLKEM">ML-KEM-768 (CRYSTALS-Kyber)</li>
+    <li data-algo="Dilithium">ML-DSA-65 (Dilithium)</li>
+    <li data-algo="SHA256">SHA-256</li>
+    <li data-algo="MD5" class="deprecated">MD5 (deprecated)</li>
+    <li data-algo="DES" class="deprecated">DES / 3DES (deprecated)</li>
+  </ul>
+  <!-- TODO: remove SHA1 and RC4 references; migrate MD5 to SHA-256 -->
+  <script>
+    const defaultCipher = 'ChaCha20-Poly1305';
+    const kdf = 'Argon2id';
+    const pqcKem = 'ML-KEM-768';
+    console.log(defaultCipher, kdf, pqcKem);
+  </script>
+</body>
+</html>
