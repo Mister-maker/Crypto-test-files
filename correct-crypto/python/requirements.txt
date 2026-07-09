@@ -1,0 +1,3 @@
+# correct-crypto Python demos
+cryptography>=42.0   # AESGCM, Ed25519 (aead_encrypt.py, signature.py)
+# password_hash.py and hmac_hash.py use only the standard library
