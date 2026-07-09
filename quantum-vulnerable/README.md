@@ -1,10 +1,21 @@
-# quantum-vulnerable/
+# quantum-vulnerable/ -- broken / weak algorithm implementations
 
-Classical public-key algorithms broken by a large-scale quantum computer
-via **Shor's algorithm**: RSA (all key sizes and paddings), finite-field
-Diffie-Hellman (DH/DHE/MODP/ffdhe), elliptic-curve schemes (ECDH, ECDSA,
-EdDSA/Ed25519/Ed448, ECIES, X25519/X448 and named curves), DSA, ElGamal,
-Schnorr, GOST signatures, and pairing/factoring schemes (BLS, Paillier,
-Rabin, Cramer-Shoup).
+Algorithms broken by a quantum computer (Shor's algorithm) or already weak /
+deprecated:
 
-These should all be flagged as **quantum-vulnerable / harvest-now-decrypt-later**.
+- **RSA-2048 (OAEP)** -- broken by Shor
+- **ECDSA (P-256)** -- broken by Shor
+- **3DES (DESede)** -- weak 64-bit-block legacy cipher
+
+Correct, idiomatic implementations, one file per language:
+
+| File | Language |
+|---|---|
+| `BrokenAlgorithms.java` | Java (JCA) |
+| `broken_algorithms.py` | Python (cryptography) |
+| `broken_algorithms.go` | Go (crypto/*) |
+| `broken_algorithms.rs` | Rust (rsa, p256, des) |
+| `brokenAlgorithms.js` | JavaScript (node:crypto) |
+
+Real (if insecure/legacy) crypto -> a scanner should detect every algorithm here
+as a true positive, and ideally flag them as quantum-vulnerable / deprecated.

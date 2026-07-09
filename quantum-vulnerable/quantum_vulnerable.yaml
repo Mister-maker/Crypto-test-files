@@ -1,8 +1,0 @@
-# Quantum-vulnerable (Shor-breakable) inventory
-quantum_vulnerable:
-  key_exchange: [DH, ECDH, ECDHE, X25519, X448]
-  signatures: [RSA, RSA-PSS, DSA, ECDSA, Ed25519, Ed448, ElGamal, Schnorr]
-  encryption: [RSA-OAEP, ElGamal, Paillier, ECIES]
-  curves: [P-256, P-384, P-521, secp256k1, brainpoolP256r1, Curve25519]
-  rsa_key_sizes: [1024, 2048, 3072, 4096, 8192]
-  migrate_to: [ML-KEM-768, ML-DSA-65, SLH-DSA]

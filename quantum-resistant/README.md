@@ -1,7 +1,21 @@
-# quantum-resistant/
+# quantum-resistant/ -- symmetric (quantum-resistant) implementations
 
-Post-quantum (PQC) algorithms. Lattice KEMs (ML-KEM/Kyber, FrodoKEM,
-NTRU, Saber), lattice signatures (ML-DSA/Dilithium, Falcon), hash-based
-signatures (SLH-DSA/SPHINCS+, XMSS, LMS), code-based (Classic McEliece,
-BIKE, HQC), multivariate (Rainbow, GeMSS, UOV), isogeny (SIKE/SIDH/CSIDH),
-and hybrid suites (X25519MLKEM768). Includes NIST FIPS 203/204/205 names.
+In this corpus's taxonomy, **quantum-resistant = symmetric** primitives that stay
+secure against quantum attacks at adequate sizes (only weakened by Grover's
+algorithm, so use 256-bit keys / >=384-bit hashes):
+
+- **AES-256-GCM** -- authenticated encryption
+- **SHA-512** -- hashing
+- **HMAC-SHA-256** -- message authentication
+
+Correct, idiomatic implementations, one file per language:
+
+| File | Language |
+|---|---|
+| `SymmetricPrimitives.java` | Java (JCA) |
+| `symmetric_primitives.py` | Python (cryptography + stdlib) |
+| `symmetric_primitives.go` | Go (crypto/*) |
+| `symmetric_primitives.rs` | Rust (aes-gcm, sha2, hmac) |
+| `symmetricPrimitives.js` | JavaScript (node:crypto) |
+
+All real crypto -> a scanner should detect every algorithm here as a true positive.
