@@ -13,7 +13,7 @@ imports, and embedded JSON / YAML / XML / SQL / Markdown / HTML.
 
 `java/ python/ javascript/ typescript/ c/ cpp/ csharp/ go/ rust/ ruby/`
 
-## Stress folders
+## Stress folders list 
 
 Additional top-level folders target detection quality specifically.
 
