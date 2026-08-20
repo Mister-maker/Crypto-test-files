@@ -1,0 +1,39 @@
+# GitHub Actions release workflow with supply-chain crypto steps.
+# (Kept under ci-cd/ instead of .github/workflows/ so it is a test fixture, not
+# a live workflow.) Secrets come from GitHub Actions secrets, never the repo.
+name: release
+
+on:
+  push:
+    tags: ['v*']
+
+jobs:
+  sign-and-publish:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write   # keyless cosign / Sigstore (ECDSA)
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Compute SHA-256 checksums
+        run: sha256sum dist/* > SHA256SUMS
+
+      - name: Sign checksums with GPG (RSA)
+        env:
+          GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
+        run: |
+          echo "$GPG_PRIVATE_KEY" | gpg --batch --import
+          gpg --batch --yes --detach-sign --armor SHA256SUMS
+
+      - name: Sign container image with cosign (keyless, ECDSA/Sigstore)
+        uses: sigstore/cosign-installer@v3
+      - run: cosign sign --yes ghcr.io/${{ github.repository }}:${{ github.ref_name }}
+
+      - name: Verify TLS endpoint (AES-256-GCM / ECDHE / X25519)
+        run: openssl s_client -connect example.com:443 -tls1_3 </dev/null
+
+      - name: Sign release manifest with Ed25519
+        env:
+          CI_SIGNING_KEY: ${{ secrets.CI_SIGNING_KEY }}
+        run: python3 ci-cd/sign_release.py
